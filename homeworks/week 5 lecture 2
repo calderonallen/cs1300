@@ -1,0 +1,24 @@
+print("=== Grade Calculator ===")
+score = float(input("Enter your score (60):"))
+
+if score >= 90:
+grade = "A"
+print(f"score: {Score} - Grade: {grade}")
+print ("Excellent Work!")
+
+elif score >=80:
+grade = "B"
+print(f"score: {score} - Grade: {grade}")
+print ("Good job!")
+
+elif score >= 70: 
+grade = "C"
+print(f"score: {score} - Grade: {grade} ")
+print("Satisfactory performance")
+
+elif score >= 60:
+grade = "D"
+print(f"score: {score} - Grade: {grade}") 
+print("Please see instructor for help")           
+
+

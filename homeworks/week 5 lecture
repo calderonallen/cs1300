@@ -1,0 +1,7 @@
+ Age >= 18 and Age <= 75
+ Income >= 25000
+ credit score >= 650
+
+
+
+age = int(input("Age:"))

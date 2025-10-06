@@ -1,0 +1,6 @@
+
+
+print (text = "Mississippi")
+print (text.count("s")) # Returns: _____
+print (text.count("ss")) # Returns: _____
+print (text.count("pip")) # Returns: _____

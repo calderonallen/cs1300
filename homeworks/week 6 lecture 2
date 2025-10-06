@@ -1,0 +1,18 @@
+print("=" *50)
+print("USER REGISTRATION SYSTEM v2.0")
+print("=" *50)
+
+errors = []
+warnings = []
+registration_data = {}
+#SECTION 1: Name Validation 
+print("SECTION 1: Personal Information")
+print("-" *40)
+
+First_name = input("First Name: ").strip()
+
+if First_name == "": 
+    errors.append("First name is required")
+    first_name_valid = False
+elif len(First_name) < 2:
+    

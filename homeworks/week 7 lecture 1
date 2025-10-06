@@ -1,0 +1,5 @@
+original = [10,20,30]
+copy1 = original
+copy2 = original
+copy1[1] = 200
+copy2[2] = 300
