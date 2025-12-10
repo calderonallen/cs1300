@@ -1,0 +1,9 @@
+count = 0 
+for number in numbers:
+    if number > 0:
+        count += 1
+return count
+print(count_positive([5, -2, 0, 3, -1, 8]))
+print(count_positive([-1, -2, -3]))
+print(count_positive([10, 20, 30]))
+print(count_positive([]))
