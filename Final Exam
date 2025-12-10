@@ -1,3 +1,4 @@
+problem 1:count positive numbers
 count = 0 
 for number in numbers:
     if number > 0:
@@ -7,3 +8,70 @@ print(count_positive([5, -2, 0, 3, -1, 8]))
 print(count_positive([-1, -2, -3]))
 print(count_positive([10, 20, 30]))
 print(count_positive([]))
+
+problem 2: Age classifier
+def get_age_group(age):
+    """
+    classify age into a group:
+    0-12: child
+    13-19: teen
+    20-59: Adult
+    60+: senior
+
+if 0 <= age <= 12:
+    return "child"
+elif 13 <= age <= 19:
+    return "teen"
+elif 20 <= age <= 59:
+    return "Adult"
+else: 
+    return "senior"
+print(get_age_group(5))
+print(get_age_group(15))
+print(get_age_group(30))
+print(get_age_group(65))
+ages_list = [5, 15, 25, 35, 65, 8, 18, 70]
+print(count_age_groups(ages_list))
+
+problem 3: palindrome checker
+parameters:
+word: string to check
+returns:
+true if palindrome, false if otherwise
+#convert to lowercase
+normalized_word = word.lower()
+# reverse the normalized word
+reversed_word + normalized_word[::-1]
+# compare the normalized word with its reverse 
+return normalized_word == reverse_word
+print(is_palindrome("racecar"))
+print(is_palindrome("hello"))
+print(is_palindrome("mom"))
+print(is_palindrome("noon"))
+print(is_palindrome("python"))
+
+problem 4: number pattern
+for i in range(1, n +1):
+    row = ""
+    for j in range(1, i + 1):
+        row += str(j) + ""
+    row = row.strip()
+    pattern.append(row)
+rows = create_pattern(n)
+for row in rows:
+    print(row)
+print_pattern(3)
+print_patterns(5)
+result = create_pattern(3)
+print(result) 
+
+problem 5: list reverser
+def reverse_list(items):
+    reversed_items = []
+    for i in range(len(items) -1, -1, -1):
+        reversed_items.append(items[i])
+    return reversed_items
+print(reverse_list([1, 2, 3, 4, 5]))
+print(reverse_list(["a", "b", "c"]))
+print(reverse_list([10]))
+print(reverse_list([]))
